@@ -4,3 +4,4 @@
 
 ##### [preview (github pages)](https://borisbutenko.github.io/tetris-vanilla-js/index.html)
 
+So-so... Not perfect implementation : )
