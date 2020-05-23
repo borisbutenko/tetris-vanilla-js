@@ -2,5 +2,5 @@
 
 ### [wiki](https://en.wikipedia.org/wiki/Tetris)
 
-##### [preview (github pages)](preview https://borisbutenko.github.io/tetris-vanilla-js/index.html)
+##### [preview (github pages)](https://borisbutenko.github.io/tetris-vanilla-js/index.html)
 
