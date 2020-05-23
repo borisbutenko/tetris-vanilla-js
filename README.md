@@ -1,2 +1,6 @@
 # tetris-vanilla-js
-https://en.wikipedia.org/wiki/Tetris
+
+### [wiki](https://en.wikipedia.org/wiki/Tetris)
+
+##### [preview (github pages)](preview https://borisbutenko.github.io/tetris-vanilla-js/index.html)
+
