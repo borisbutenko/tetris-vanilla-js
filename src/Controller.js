@@ -79,11 +79,7 @@ class Controller {
     }
 
     handle_game_over () {
-        EventEmitter.on("game-over", top_out => {
-            this.is_paused = top_out
-            this.view.render_screen("end", this.game_state)
-            this.stop_timer()
-        })
+        EventEmitter.on("game-over", this.end.bind(this))
     }
 
     play () {
@@ -98,9 +94,19 @@ class Controller {
         this.stop_timer()
     }
 
+    end () {
+        this.is_paused = true
+        this.view.render_screen("end", this.game_state)
+        this.stop_timer()
+    }
+
     update_view () {
         this.game.move_piece("down")
         this.view.render_screen("game", this.game_state)
+
+        if (this.game_state.is_over) {
+            this.end()
+        }
     }
 
     start_timer () {
